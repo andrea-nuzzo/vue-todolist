@@ -21,12 +21,13 @@ const app = new Vue({
 
     methods:{
         add: function(){
-            for(key in this.todos){
-                console.log(key)
+            if(this.input != ""){
+                this.todos.push({text:this.input, done:false});
             }
-            // if(this.input != ""){
-            //     this.todos.push({text:this.input, done:false});
-            // }
+        },
+
+        remove: function(index){
+            this.todos.splice(index, 1);
         }
     },
 
