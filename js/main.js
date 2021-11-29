@@ -28,7 +28,15 @@ const app = new Vue({
 
         remove: function(index){
             this.todos.splice(index, 1);
-        }
-    },
+        },
+
+        changeTodo: function(index){
+           if(this.todos[index].done == true){
+            this.todos[index].done = false;
+           }else{
+            this.todos[index].done = true;
+           }
+        },
+    }
 
 });

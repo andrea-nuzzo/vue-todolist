@@ -33,11 +33,11 @@
 
             <!-- Section todo -->
             <div class="todo" v-for="(item, index) in todos">
-                <div class="check">
+                <div class="check" @click="changeTodo(index)">
                     <i v-if = "item.done == false" class="far fa-circle" ></i>
                     <i v-else class="far fa-check-circle" ></i>
                 </div>
-                <div class="text" :class="{lineOn : item.done}">{{item.text}}</div>
+                <div class="text" :class="{lineOn : item.done}" >{{item.text}}</div>
                 <div class="delete"><i class="far fa-times-circle" @click="remove(index)"></i></div>
             </div>
         </main>
