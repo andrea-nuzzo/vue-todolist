@@ -60,3 +60,6 @@ main{
     cursor: pointer;
 }
 
+.lineOn{
+    text-decoration: line-through 2px;
+}

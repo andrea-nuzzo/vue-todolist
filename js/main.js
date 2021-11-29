@@ -5,18 +5,19 @@ const app = new Vue({
         todos:[
             {
                text: "Comprare l'acqua",
-               done: true 
+               done: true,
             },
             {
                 text:'Comprare decorazione Natalizie',
-                done: false 
+                done: false,
              },
              {
                 text:"Fare l'esercizio Vue di Boolean",
-                done: true 
+                done: true,
              },
         ],
     },
+    
     methods:{},
 
 });

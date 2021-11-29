@@ -23,12 +23,12 @@
         </header>
 
         <main>
-            <div class="todo" v-for="items in todos">
+            <div class="todo" v-for="item in todos">
                 <div class="check">
                     <i class="far fa-circle"></i>
                     <!-- <i class="far fa-check-circle"></i> -->
                 </div>
-                <div class="text">{{items.text}}</div>
+                <div class="text" :class="{lineOn : item.done}">{{item.text}}</div>
                 <div class="delete"><i class="far fa-times-circle"></i></div>
             </div>
         </main>
