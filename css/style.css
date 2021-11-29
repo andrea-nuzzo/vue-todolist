@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(4, 22, 48);
+    font-family: 'Khula', sans-serif;
+}
+
+/* *** HEADER *** */
+header{
+    height: 100px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo, .title{
+    margin-left: 20px;
+}
+
+.title{
+    color: rgb(96, 213, 129) ;
+    font-size: 30px;
+}
+
+/* *** MAIN *** */
+
+main{
+    margin-top: 20px;
+}
+
+.todo{
+    width: 50%;
+    height: 50px;
+    border-radius: 1rem;
+    margin: auto;
+    background-color: rgb(41, 110, 241);
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+}
+
+.text {
+    width: 90%;
+    border: 1px solid red;
+}
+
+.check, .delete{
+    width: 5%;
+    text-align: center;
+    border: 1px solid white;
+}
+
