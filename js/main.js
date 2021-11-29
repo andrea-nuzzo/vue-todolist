@@ -23,6 +23,7 @@ const app = new Vue({
         add: function(){
             if(this.input != ""){
                 this.todos.push({text:this.input, done:false});
+                this.input = '';
             }
         },
 
@@ -35,4 +36,7 @@ const app = new Vue({
         },
     }
 
+    
+
 });
+

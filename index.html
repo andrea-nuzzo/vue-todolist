@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Khula:wght@800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Khula:wght@300;400;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>To Do List</title>
@@ -14,11 +14,11 @@
 <body>
     <div id="root">
         <header>
+            <div class="title">
+                <span>To Do List</span>
+            </div>
             <div class="logo">
                 <img src="https://www.boolean.careers/images/misc/logo-white.png" alt="logo-white">
-            </div>
-            <div class="title">
-                To Do List
             </div>
         </header>
 
@@ -28,8 +28,6 @@
                 <i class="fas fa-plus" @click ="add()"> Add</i>
                 <input class="inputText" type="text" placeholder="Inserisci il testo" v-model="input" @keyup.enter="add()">
             </div>
-
-
 
             <!-- Section todo -->
             <div class="todo" v-for="(item, index) in todos">

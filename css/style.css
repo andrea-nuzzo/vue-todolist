@@ -6,34 +6,41 @@
 
 body{
     background-color: rgb(4, 22, 48);
-    font-family: 'Khula', sans-serif;
+    
 }
 
 /* *** HEADER *** */
 header{
     height: 100px;
-    display: flex;
-    align-items: center;
+    font-family: 'Khula', sans-serif;
+    font-weight: 800;
+    position: relative;
+    background: linear-gradient(180deg, rgba(96,213,129,0.09845945214023111) 0%, rgba(4,22,48,1) 64%); 
 }
-
 
 .logo, .title{
     margin-left: 20px;
 }
 
 .title{
+    height: 100px;
+    line-height: 100px;
     color: rgb(96, 213, 129) ;
     font-size: 30px;
+    text-align: center;
+}
+.logo{
+    position: absolute;
+    left: 0px;
+    top: 0%;
+    transform: translate(0, 50%);
 }
 
 /* *** MAIN *** */
-
 main{
     margin-top: 20px;
+    font-family: 'Khula', sans-serif;
 }
-
-
-
 
 .add{
     font-size: 20px;
@@ -48,7 +55,7 @@ main{
 
 .add input{
     width: 95%;
-    height: 40px;
+    height: 30px;
     border-radius: 1rem;
     margin-bottom: 5px;
     display: flex;
@@ -57,6 +64,7 @@ main{
     background-color: rgb(4, 22, 48);
     border: none;
     color:rgb(96, 213, 129);
+    
 }
 
 .add:hover{
@@ -65,8 +73,6 @@ main{
     background-color: rgb(96, 213, 129);
     cursor:pointer;
 }
-
-
 
 .todo, .add {
     display: flex;
@@ -80,10 +86,16 @@ main{
 }
 
 .todo{
-    background-color: rgb(41, 110, 241);
+    border: 2px solid rgb(41, 110, 241);
     font-size: 18px;
+    color: rgb(41, 110, 241);
+    font-weight: 300;
+}
+
+.todo:hover{
+    transition: 1s;
+    background-color: rgb(41, 110, 241);
     color: white;
-    font-weight: 400;
 }
 
 .text {
