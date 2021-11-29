@@ -16,8 +16,18 @@ const app = new Vue({
                 done: true,
              },
         ],
+        input: '',
     },
-    
-    methods:{},
+
+    methods:{
+        add: function(){
+            for(key in this.todos){
+                console.log(key)
+            }
+            // if(this.input != ""){
+            //     this.todos.push({text:this.input, done:false});
+            // }
+        }
+    },
 
 });

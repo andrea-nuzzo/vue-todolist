@@ -23,6 +23,15 @@
         </header>
 
         <main>
+            <!-- Section add todo -->
+            <div class="add">
+                <i class="fas fa-plus" @click ="add()"> Add</i>
+                <input class="inputText" type="text" placeholder="Inserisci il testo" v-model="input" @keyup.enter="add()">
+            </div>
+
+
+
+            <!-- Section todo -->
             <div class="todo" v-for="item in todos">
                 <div class="check">
                     <i class="far fa-circle"></i>
