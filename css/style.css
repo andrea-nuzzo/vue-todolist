@@ -12,7 +12,6 @@ body{
 /* *** HEADER *** */
 header{
     height: 100px;
-    border: 1px solid white;
     display: flex;
     align-items: center;
 }
@@ -35,7 +34,7 @@ main{
 
 .todo{
     width: 50%;
-    height: 50px;
+    height: 60px;
     border-radius: 1rem;
     margin: auto;
     background-color: rgb(41, 110, 241);
@@ -44,17 +43,20 @@ main{
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 20px;
+    padding: 1rem;
+
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
 }
 
 .text {
     width: 90%;
-    border: 1px solid red;
 }
 
 .check, .delete{
     width: 5%;
     text-align: center;
-    border: 1px solid white;
+    cursor: pointer;
 }
 
