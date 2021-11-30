@@ -8,7 +8,7 @@ const app = new Vue({
                done: true,
             },
             {
-                text:'Comprare decorazione Natalizie',
+                text:'Comprare decorazioni Natalizie',
                 done: false,
              },
              {
@@ -17,14 +17,15 @@ const app = new Vue({
              },
         ],
         input: '',
+        arrayText: [],
     },
 
     methods:{
         add: function(){
-            if(this.input != ""){
-                this.todos.push({text:this.input, done:false});
-                this.input = '';
-            }
+                if(this.input != ""){
+                    this.todos.push({text:this.input, done:false});
+                    this.input = '';
+                } 
         },
 
         remove: function(index){
@@ -34,9 +35,6 @@ const app = new Vue({
         changeTodo: function(index){
            this.todos[index].done ? this.todos[index].done = false : this.todos[index].done = true
         },
-    }
-
-    
-
+    },
 });
 
